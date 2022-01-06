@@ -2,6 +2,11 @@
 
 Drop-in replacement for default Mule Logger that outputs a JSON structure based on a predefined JSON schema.
 
+Forked from: https://github.com/mulesoft-consulting/json-logger/tree/mule-4.x/json-logger
+
+For ease of updates from the primary source (above), our "master" branches should stay separate from the mule-4.x branch.  
+Currently, the primary branch used for our Exchange Connector is `configured-m4/bis`
+
 ## Why?
 
 - Logs are as good as the logging practices applied by developers
