@@ -16,7 +16,7 @@
       "type": "string",
       "sdk": {
         "example": "Add a log message",
-        "required": true,
+        "required": false,
         "summary": "Message to be logged"
       }
     },
@@ -24,7 +24,7 @@
       "type": "string",
       "javaType": "org.mule.runtime.extension.api.runtime.parameter.ParameterResolver<org.mule.runtime.api.metadata.TypedValue<java.io.InputStream>>",
       "sdk": {
-        "default": "#[import modules::JSONLoggerModule output application/json ---\n{\n    payload: JSONLoggerModule::stringifyNonJSON(payload) \n}]",
+        "default": "",
         "summary": "NOTE: Writing the entire payload every time across your application can cause serious performance issues",
         "required": false,
         "isContent": true
@@ -67,8 +67,9 @@
     "category": {
       "type": "string",
       "sdk": {
+        "default": "ab.bis.logging",
         "required": false,
-        "summary": "If not set, by default will log to the org.mule.extension.jsonlogger.JsonLogger category"
+        "summary": "If not set, by default will log to the ab.bis.logging category"
       },
       "note": "This field is mandatory. DON'T REMOVE"
     }

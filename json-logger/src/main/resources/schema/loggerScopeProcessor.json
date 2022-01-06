@@ -12,7 +12,7 @@
         "FLOW_LOGIC_SCOPE"
       ],
       "sdk": {
-        "default": "OUTBOUND_REQUEST_SCOPE",
+        "default": "FLOW_LOGIC_SCOPE",
         "summary": "Current processing stage"
       }
     }
