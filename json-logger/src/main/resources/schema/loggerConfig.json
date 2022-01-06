@@ -10,7 +10,7 @@
           "type": "string",
           "sdk": {
             "required": true,
-            "default": "${json.logger.application.name}",
+            "default": "${app.name}",
             "summary": "Name of the Mule application. Recommendation: This value should be based on pom.xml"
           }
         },
@@ -18,7 +18,7 @@
           "type": "string",
           "sdk": {
             "required": true,
-            "default": "${json.logger.application.version}",
+            "default": "${app.version}",
             "summary": "Version of the Mule application. Recommendation: This value should be based on pom.xml"
           }
         },
