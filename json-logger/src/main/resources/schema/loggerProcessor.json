@@ -34,7 +34,7 @@
       "type": "string",
       "javaType": "org.mule.extension.jsonlogger.api.pojos.TracePoint",
       "enum": [
-        "NONE",
+        "INSTANT",
         "START",
         "BEFORE_TRANSFORM",
         "AFTER_TRANSFORM",
@@ -45,7 +45,7 @@
         "EXCEPTION"
       ],
       "sdk": {
-        "default": "NONE"
+        "default": "INSTANT"
       }
     },
     "priority": {
